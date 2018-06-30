@@ -3,30 +3,19 @@ import { connect } from 'react-redux'
 
 import { randomVideo } from "../actions/actions";
 
-const RandomButton = (props) => {
-    console.log(props)
+const RandomButton = ({ handleClick }) => {
     return (
-        <button onClick={props.handleClick}>Random video</button>
+        <button onClick={handleClick}>Random video</button>
     )
 }
 
-const handleClick = (dispatch) => {
-
-    
-    // this.props.dispatch(randomVideo(randomNumber))
-}
-
 const mapDispatchToProps = (dispatch) => {
-    return { 
+    return {
         handleClick: () => {
-            dispatch(randomVideo(getRandomNumber()))
+            dispatch(randomVideo())
         }
     }
-        
-}
- 
-const getRandomNumber = () => {
-    return Math.floor(Math.random() * (5))
+
 }
 
 export default connect(null, mapDispatchToProps)(RandomButton)
