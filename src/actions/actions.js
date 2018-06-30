@@ -1,5 +1,7 @@
-export const randomVideo = (randomNumber) => (
+const randomVideo = (randomNumber) => (
     {
         type: 'RANDOMIZE'
     }
 )
+
+export default randomVideo

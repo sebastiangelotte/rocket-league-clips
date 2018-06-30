@@ -1,17 +1,13 @@
-import React, { Component } from 'react'
+import React from 'react'
 import './App.css'
-import Video from './components/Video.js'
+import Video from './components/Video'
 import RandomButton from './components/RandomButton'
 
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <Video />
-        <RandomButton />
-      </div>
-    )
-  }
-}
+const App = () => (
+  <div>
+    <Video />
+    <RandomButton />
+  </div>
+)
 
 export default App
