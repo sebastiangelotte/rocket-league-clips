@@ -15,7 +15,6 @@ const mapDispatchToProps = (dispatch) => {
             dispatch(randomVideo())
         }
     }
-
 }
 
 export default connect(null, mapDispatchToProps)(RandomButton)
