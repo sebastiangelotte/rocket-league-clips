@@ -1,7 +1,7 @@
-const randomVideo = (randomNumber) => (
-    {
-        type: 'RANDOMIZE'
-    }
+const randomVideo = () => (
+  {
+    type: 'RANDOMIZE'
+  }
 )
 
 export default randomVideo
