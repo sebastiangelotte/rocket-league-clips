@@ -8,6 +8,12 @@ const initialState = {
     },
     {
       src: '/videos/3.mp4'
+    },
+    {
+      src: '/videos/4.mp4'
+    },
+    {
+      src: '/videos/5.mp4'
     }
   ],
   activeVideo: {

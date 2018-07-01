@@ -1,15 +1,20 @@
 import React from 'react'
-import { connect } from 'react-redux'
+import styled from 'styled-components'
 
-const Video = ({ src }) => (
-  <div>
-    <video key={src} width="100%" height="100%" controls>
+const Video = ({ src, id }) => (
+  <VideoWrapper>
+    <SingleVideo key={id} width="100%">
       <source src={src} type="video/mp4" />
       Your browser does not support the video tag.
-    </video>
-  </div>
+    </SingleVideo>
+  </VideoWrapper>
 )
 
-const mapStateToProps = state => ({ src: state.activeVideo.src })
+const VideoWrapper = styled.div`
+  background-color: #ff0069;
+`
+const SingleVideo = styled.video`
+  display: block;
+`
 
-export default connect(mapStateToProps)(Video)
+export default Video
