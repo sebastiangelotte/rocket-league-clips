@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 
-import randomVideo from '../actions/actions'
+import { randomVideo } from '../actions/actions'
 
 const RandomButton = ({ handleClick }) => (
   <button type="button" onClick={handleClick}>
